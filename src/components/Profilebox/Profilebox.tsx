@@ -1,7 +1,6 @@
 import "./Profilebox.css";
-import React, { useState, useEffect } from "react";
 
-const Profilebox = (props) => {
+const Profilebox = (props: any) => {
   const data=props.profileData;
   const repos=props.repos;
 
@@ -72,7 +71,7 @@ const Profilebox = (props) => {
 
           <h1>Repositiories</h1>
           <div className="repobox">
-          {repos.map((repo) => {
+          {repos.map((repo:any) => {
 
             return(
             <a href="/" key={repo.id}>

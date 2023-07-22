@@ -6,7 +6,7 @@ const Introbar = () => {
   const [isPending, startTransition] = useTransition();
   const [userName, setUserName] = useState('bishalde');
   const [userData, setUserData] = useState({});
-  const [userFound, setUserFound] = useState(null);
+  const [userFound, setUserFound] = useState<any | null>(null);
 
   const [repos,setRepos] = useState([]);
 
