@@ -1,0 +1,73 @@
+.introbar {
+  position: relative;
+  top: 70px;
+  left: 0px;
+  width: 100%;
+  height: 60vh;
+  color: #fafbfc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introbar h1 {
+  text-align: center;
+  line-height: 90px;
+  font-size: 5.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.introbar h1 span {
+  background: -webkit-linear-gradient(#eee, #4e1392);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.introbar h4 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.introbar .searchbox {
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introbar .searchbox input {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+.introbar .searchbox button {
+  position: absolute;
+  right: 6px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(#c4acf5, #45078b);
+  color: #fafbfc;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+
+h1.showinfo {
+  text-align: center;
+  line-height: 90px;
+  color: #eee;
+  font-family: "Poppins", sans-serif;
+}/*# sourceMappingURL=Introbar.css.map */

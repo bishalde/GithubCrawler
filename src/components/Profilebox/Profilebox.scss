@@ -1,0 +1,221 @@
+$maincolor: #000000;
+$maincolor2: #101011;
+$secondarycolor: #ffffff;
+$secondarycolor2: #2dba4e;
+$poppins: "Poppins", sans-serif;
+$roboto: "Roboto", sans-serif;
+
+.databox {
+    margin: 30px;
+    width: calc(100% - 60px);
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(43, 43, 42));
+    opacity: 0.8;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    padding: 30px;
+
+    .profilebox {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+        img {
+            height: 250px;
+            width: 250px;
+            border-radius: 30%;
+        }
+
+        h1 {
+            font-family: $poppins;
+            font-size: 3rem;
+            color: $secondarycolor;
+        }
+
+        h3 {
+            font-family: $roboto;
+            font-size: 1.5rem;
+            color: $secondarycolor;
+        }
+
+        h5,
+        .blog {
+            margin: 2px 0;
+            font-family: $poppins;
+            font-size: 1rem;
+            color: $secondarycolor;
+        }
+
+        p {
+            font-family: $roboto;
+            font-size: 1.4rem;
+            color: $secondarycolor;
+            word-wrap: break-word;
+            margin-bottom: 20px;
+        }
+
+        a.infobtns {
+            font-size: 1.3rem;
+            color: $secondarycolor;
+            font-family: $poppins;
+            margin: 0px 20px 0px 0px;
+            background-color: #f30c0cce;
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+
+        a.profile {
+            position: relative;
+            font-family: $roboto;
+            font-size: 1.4rem;
+            color: $secondarycolor;
+            word-wrap: break-word;
+            padding: 10px 15px;
+            background-color: #4814d6f1;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            img {
+                height: 40px;
+                width: 60px;
+            }
+        }
+    }
+
+    .profiledetails {
+        position: relative;
+        margin-top: 30px;
+
+        h1 {
+            font-family: $poppins;
+            font-size: 2.5rem;
+            color: $secondarycolor2;
+            margin: 30px 0px;
+        }
+
+        h2 {
+            font-family: $poppins;
+            font-size: 1.6rem;
+            line-height: 25px;
+            color: $secondarycolor2;
+            margin: 15px 40px;
+
+            span {
+                font-family: $roboto;
+                font-size: 1.5rem;
+                color: $secondarycolor;
+            }
+
+            a {
+                font-family: $roboto;
+                font-size: 1.5rem;
+                color: $secondarycolor;
+                text-decoration: none;
+                margin: 0px 10px;
+            }
+        }
+
+        .repobox {
+            width: 100%;
+            padding:10px 30px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            a {
+                flex: 30%;
+                .repo {
+                    border-radius: 20px;
+                    background-color: $maincolor;
+                    padding: 5px 10px;
+
+                    h3{
+                        font-family: $poppins;
+                        font-size: 1.2rem;
+                        color: $secondarycolor;
+                    }
+
+                    a{
+                        font-family: $poppins;
+                        font-size: .9rem;
+                        color: $secondarycolor;
+                        text-decoration: none;
+                    }
+
+                    p{
+                        font-family: $poppins;
+                        font-size: .7rem;
+                        line-height: 15px;
+                        color: $secondarycolor;
+                        height: 15px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    .iddata{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 10px;
+
+                        h3{
+                            font-family: $poppins;
+                            font-size: .8rem;
+                            color: $secondarycolor;
+                        }
+                    }
+
+                    .languages{
+                        margin: 10px 0;
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        align-items: center;
+
+                        button{
+                            font-family: $poppins;
+                            font-size: .8rem;
+                            color: $secondarycolor;
+                            background-color: $maincolor2;
+                            border-radius: 20px;
+                            padding: 5px 10px;
+                        }
+                    }
+
+                    .countdetails{
+                        margin: 10px 0;
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        align-items: center;
+
+                        button{
+                            font-family: $poppins;
+                            font-size: .8rem;
+                            color: $secondarycolor;
+                            background-color: blue;
+                            border-radius: 20px;
+                            padding: 5px 10px;
+
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}

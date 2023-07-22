@@ -1,0 +1,182 @@
+.databox {
+  margin: 30px;
+  width: calc(100% - 60px);
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(43, 43, 42));
+  opacity: 0.8;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 30px;
+}
+.databox .profilebox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.databox .profilebox img {
+  height: 250px;
+  width: 250px;
+  border-radius: 30%;
+}
+.databox .profilebox h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+}
+.databox .profilebox h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.databox .profilebox h5,
+.databox .profilebox .blog {
+  margin: 2px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.databox .profilebox p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  color: #ffffff;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+.databox .profilebox a.infobtns {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin: 0px 20px 0px 0px;
+  background-color: rgba(243, 12, 12, 0.8078431373);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.databox .profilebox a.profile {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  color: #ffffff;
+  word-wrap: break-word;
+  padding: 10px 15px;
+  background-color: rgba(72, 20, 214, 0.9450980392);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.databox .profilebox a.profile img {
+  height: 40px;
+  width: 60px;
+}
+.databox .profiledetails {
+  position: relative;
+  margin-top: 30px;
+}
+.databox .profiledetails h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  color: #2dba4e;
+  margin: 30px 0px;
+}
+.databox .profiledetails h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 25px;
+  color: #2dba4e;
+  margin: 15px 40px;
+}
+.databox .profiledetails h2 span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.databox .profiledetails h2 a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+.databox .profiledetails .repobox {
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.databox .profiledetails .repobox a {
+  flex: 30%;
+}
+.databox .profiledetails .repobox a .repo {
+  border-radius: 20px;
+  background-color: #000000;
+  padding: 5px 10px;
+}
+.databox .profiledetails .repobox a .repo h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.databox .profiledetails .repobox a .repo a {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+.databox .profiledetails .repobox a .repo p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  line-height: 15px;
+  color: #ffffff;
+  height: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.databox .profiledetails .repobox a .repo .iddata {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.databox .profiledetails .repobox a .repo .iddata h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+.databox .profiledetails .repobox a .repo .languages {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.databox .profiledetails .repobox a .repo .languages button {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: #101011;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.databox .profiledetails .repobox a .repo .countdetails {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.databox .profiledetails .repobox a .repo .countdetails button {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: blue;
+  border-radius: 20px;
+  padding: 5px 10px;
+}/*# sourceMappingURL=Profilebox.css.map */

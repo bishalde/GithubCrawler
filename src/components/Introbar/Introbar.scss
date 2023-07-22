@@ -1,0 +1,86 @@
+$maincolor: #000000;
+$maincolor2: #101011;
+$secondarycolor: #fafbfc;
+$secondarycolor2: #2dba4e;
+$poppins: "Poppins", sans-serif;
+$roboto: "Roboto", sans-serif;
+
+.introbar {
+    position: relative;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    height: 60vh;
+    color: $secondarycolor;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        line-height: 90px;
+        font-size: 5.5rem;
+        font-weight: 700;
+        font-family: $poppins;
+
+        span {
+            background: -webkit-linear-gradient(#eee, #4e1392);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    h4 {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 400;
+        font-family: $roboto;
+    }
+    
+    .searchbox{
+        overflow: hidden;
+        position: relative;
+        margin-top: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            position: relative;
+            width: 100%;
+            height: 60px;
+            border: none;
+            border-radius: 10px;
+            padding: 0 20px;
+            font-size: 1.2rem;
+            font-family: $roboto;
+            outline: none;
+        }
+
+        button {
+            position: absolute;
+            right: 6px;
+            width: 100px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            background:linear-gradient(#c4acf5, #45078b);
+            color: $secondarycolor;
+            font-size: 1.3rem;
+            font-family: $roboto;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}
+
+h1.showinfo{
+    text-align: center;
+    line-height: 90px;
+    color: #eee;
+    font-family: $poppins;
+}
