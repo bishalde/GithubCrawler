@@ -50,7 +50,7 @@ const Introbar = () => {
         <div className="searchbox">
           <input
             value={userName}
-            onChange={handleChange}
+            onChange={(e) => {setUserName(e.target.value)}}
             type="text"
             placeholder="Search for a user"
           />
