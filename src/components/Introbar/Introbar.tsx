@@ -4,13 +4,14 @@ import Profilebox from "../Profilebox/Profilebox";
 
 const Introbar = () => {
   const [isPending, startTransition] = useTransition();
-  const [userName, setUserName] = useState('bishalde');
+  const [userName, setUserName] = useState(null);
   const [userData, setUserData] = useState({});
   const [userFound, setUserFound] = useState<any | null>(null);
 
   const [repos,setRepos] = useState([]);
 
-  const handleChange = () => {
+  const handleChange = (event:any) => {
+    event.preventDefault();
     startTransition(() => {
       fetch(`https://api.github.com/users/${userName}`)
         .then((res) => {
@@ -48,6 +49,7 @@ const Introbar = () => {
           Effortless and efficient exploration !
         </h4>
         <div className="searchbox">
+        <form onSubmit={handleChange}>
           <input
             value={userName}
             onChange={(e) => {setUserName(e.target.value)}}
@@ -55,6 +57,7 @@ const Introbar = () => {
             placeholder="Search for a user"
           />
           <button onClick={handleChange}>Search</button>
+        </form>
         </div>
       </section>
       {userFound ? (

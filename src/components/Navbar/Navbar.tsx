@@ -1,6 +1,18 @@
 import './Navbar.css'
+import { useState } from "react";
 
 function Navbar() {
+  const [navlinksvalue, setnavlinks] = useState("navlinks");
+
+
+  const navbarActive = () => {
+    if (navlinksvalue === "navlinks") {
+      setnavlinks("navlinks activenavlinks");
+    } else {
+      setnavlinks("navlinks");
+    }
+  };
+
   return (
     <>
     <nav>
@@ -11,7 +23,13 @@ function Navbar() {
         </div>
       </a>
 
-        <div className="navlinks">
+      <div className="hamberger" onClick={navbarActive}>
+        <div className="ham-lines"></div>
+        <div className="ham-lines"></div>
+        <div className="ham-lines"></div>
+      </div>
+
+        <div className={navlinksvalue}>
             <a href="/">Home</a>
             <a href="https://bishalde.vercel.app">Developer</a>
             <a href="https://github.com/bishalde/GithubCrawler">Repostiory</a>

@@ -23,7 +23,7 @@ const Profilebox = (props: any) => {
             <a className="infobtns" href="#">
               Following {data.following}
             </a>
-            <a className="infobtns" href="#">
+            <a className="infobtns" href="#repositories">
               Repository {data.public_repos}
             </a>
           </div>
@@ -69,12 +69,12 @@ const Profilebox = (props: any) => {
           </h2>
           </div>
 
-          <h1>Repositiories</h1>
+          <h1 id="repositories">Repositiories</h1>
           <div className="repobox">
           {repos.map((repo:any) => {
 
             return(
-            <a href="/" key={repo.id}>
+            <a href={repo.html_url} key={repo.id} target="_blank">
               <div className="repo">
                 <h3>{repo.name}</h3>
                 <p>{repo.description}</p>

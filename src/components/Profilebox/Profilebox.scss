@@ -136,8 +136,9 @@ $roboto: "Roboto", sans-serif;
                 flex: 30%;
                 .repo {
                     border-radius: 20px;
+                    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
                     background-color: $maincolor;
-                    padding: 5px 10px;
+                    padding: 10px 20px;
 
                     h3{
                         font-family: $poppins;

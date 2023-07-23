@@ -14,6 +14,16 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+nav .hamberger {
+  position: relative;
+  display: none;
+}
+nav .hamberger .ham-lines {
+  width: 20px;
+  height: 2px;
+  background-color: #fafbfc;
+  margin: 5px;
+}
 nav .navlogo {
   display: flex;
   align-items: center;
@@ -61,4 +71,57 @@ nav .navlinks a::after {
 }
 nav .navlinks a:hover::after {
   transform: scale(1);
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 13px;
+  }
+  nav .navlogo img {
+    width: 60px;
+    height: 45px;
+  }
+  nav .navlogo h1 {
+    font-size: 1.2rem;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  nav .navlogo img {
+    width: 60px;
+    height: 45px;
+  }
+  nav .navlogo h1 {
+    font-size: 1.2rem;
+    margin-left: 0px;
+  }
+  nav .hamberger {
+    display: block;
+    margin-right: 10px;
+    z-index: 101;
+  }
+  nav .navlinks {
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(-110%);
+  }
+  nav .navlinks a {
+    font-size: 2rem;
+  }
+  nav .activenavlinks {
+    transform: translateX(-10%);
+  }
 }/*# sourceMappingURL=Navbar.css.map */

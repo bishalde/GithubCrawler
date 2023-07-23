@@ -22,6 +22,19 @@ nav {
     justify-content: space-between;
     align-items: center;
 
+    .hamberger {
+        position: relative;
+        display: none;
+
+        .ham-lines {
+            width: 20px;
+            height: 2px;
+            background-color: $secondarycolor;
+            margin: 5px;
+
+        }
+    }
+
     .navlogo {
         display: flex;
         align-items: center;
@@ -40,7 +53,7 @@ nav {
         }
     }
 
-    .navlinks{
+    .navlinks {
         position: relative;
         display: flex;
         align-items: center;
@@ -48,7 +61,7 @@ nav {
         margin: 0px 40px;
         gap: 30px;
 
-        a{
+        a {
             position: relative;
             color: $secondarycolor;
             font-size: 1.1rem;
@@ -56,11 +69,11 @@ nav {
             text-decoration: none;
             transition: all 0.3s ease-in-out;
 
-            &:hover{
+            &:hover {
                 color: $secondarycolor2;
             }
 
-            &::after{
+            &::after {
                 content: "";
                 position: absolute;
                 bottom: -5px;
@@ -73,10 +86,79 @@ nav {
                 transform: scale(0);
             }
 
-            &:hover::after{
+            &:hover::after {
                 transform: scale(1);
             }
         }
     }
+}
 
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 13px;
+    }
+
+    nav {
+        .navlogo {
+            img {
+                width: 60px;
+                height: 45px;
+            }
+            h1 {
+                font-size: 1.2rem;
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+
+    nav {
+        .navlogo {
+            img {
+                width: 60px;
+                height: 45px;
+            }
+            h1 {
+                font-size: 1.2rem;
+                margin-left: 0px;
+            }
+        }
+
+        .hamberger {
+            display: block;
+            margin-right: 10px;
+            z-index: 101;
+        }
+
+        .navlinks {
+            gap: 10px;
+
+            position: fixed;
+            top: 0; left: 0;
+            width: 110%;
+            height: 60vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            background-color: rgba(0, 0, 0, 0.9);
+            transition: transform 0.5s ease-in-out;
+            transform: translateX(-110%);
+
+            a{
+                font-size: 2rem;
+            }
+        }
+
+        .activenavlinks{
+            transform: translateX(-10%);
+        }
+    }
 }
