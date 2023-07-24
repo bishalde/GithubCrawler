@@ -17,6 +17,7 @@ const Profilebox = (props: any) => {
               Blog : {data.blog}
             </a>
             <p>{data.bio}</p>
+            <div className="info-btns">
             <a className="infobtns" href="#">
               Followers {data.followers}
             </a>
@@ -26,6 +27,7 @@ const Profilebox = (props: any) => {
             <a className="infobtns" href="#repositories">
               Repository {data.public_repos}
             </a>
+            </div>
           </div>
           <a target="_blank" className="profile" href={data.html_url}>
             Profile

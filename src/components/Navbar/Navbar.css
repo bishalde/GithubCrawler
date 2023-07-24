@@ -109,7 +109,7 @@ nav .navlinks a:hover::after {
     top: 0;
     left: 0;
     width: 110%;
-    height: 60vh;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
