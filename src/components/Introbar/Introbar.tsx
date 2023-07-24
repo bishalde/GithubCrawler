@@ -4,7 +4,7 @@ import Profilebox from "../Profilebox/Profilebox";
 
 const Introbar = () => {
   const [isPending, startTransition] = useTransition();
-  const [userName, setUserName] = useState(null);
+  const [userName, setUserName] = useState<any | null>(null);
   const [userData, setUserData] = useState({});
   const [userFound, setUserFound] = useState<any | null>(null);
 
