@@ -1,1 +1,1 @@
-This is a github crwaler app deployed live at https://githubcrawler.vercel.app/
+This is a GitHub crawler app deployed live at https://githubcrawler.vercel.app/
