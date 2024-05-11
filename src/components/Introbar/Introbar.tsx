@@ -1,4 +1,4 @@
-import { useState, useTransition  } from "react";
+import { useState, useTransition } from "react";
 import "./Introbar.css";
 import Profilebox from "../Profilebox/Profilebox";
 
@@ -8,9 +8,11 @@ const Introbar = () => {
   const [userData, setUserData] = useState({});
   const [userFound, setUserFound] = useState<any | null>(null);
 
-  const [repos,setRepos] = useState([]);
+  const [repos, setRepos] = useState([]);
+  const [followers, setFollowers] = useState([]);
+  const [following, setFollowing] = useState([]);
 
-  const handleChange = (event:any) => {
+  const handleChange = (event: any) => {
     event.preventDefault();
     startTransition(() => {
       fetch(`https://api.github.com/users/${userName}`)
@@ -21,13 +23,23 @@ const Introbar = () => {
           return res.json();
         })
         .then((data) => {
-          fetch(data.repos_url)
-            .then((res) => res.json())
-            .then((data) => {
-              setRepos(data);
-            });
+          // Remove {/other_user} from the following_url
+          const followingUrl = data.following_url.replace("{/other_user}", "");
+
+          // Fetch data for repos, followers, and following
+          Promise.all([
+            fetch(data.repos_url).then((res) => res.json()),
+            fetch(data.followers_url).then((res) => res.json()),
+            fetch(followingUrl).then((res) => res.json()),
+          ]).then(([reposData, followersData, followingData]) => {
+            setRepos(reposData);
+            setFollowers(followersData);
+            setFollowing(followingData);
+          });
+
+          // Set user data and name
           setUserData(data);
-          setUserName(data.login)
+          setUserName(data.login);
           setUserFound(true);
         })
         .catch((error) => {
@@ -49,22 +61,29 @@ const Introbar = () => {
           Effortless and efficient exploration !
         </h4>
         <div className="searchbox">
-        <form onSubmit={handleChange}>
-          <input
-            value={userName}
-            onChange={(e) => {setUserName(e.target.value)}}
-            type="text"
-            placeholder="Search for a user"
-          />
-          <button onClick={handleChange}>Search</button>
-        </form>
+          <form onSubmit={handleChange}>
+            <input
+              value={userName}
+              onChange={(e) => {
+                setUserName(e.target.value);
+              }}
+              type="text"
+              placeholder="Search for a user"
+            />
+            <button onClick={handleChange}>Search</button>
+          </form>
         </div>
       </section>
       {userFound ? (
         isPending ? (
           <h1 className="showinfo">Searching...</h1>
         ) : (
-          <Profilebox profileData={userData} repos={repos} />
+          <Profilebox
+            profileData={userData}
+            repos={repos}
+            followers={followers}
+            following={following}
+          />
         )
       ) : userFound != null ? (
         <h1 className="showinfo">No User Found</h1>

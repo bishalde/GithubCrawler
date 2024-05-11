@@ -6,441 +6,417 @@ $poppins: "Poppins", sans-serif;
 $roboto: "Roboto", sans-serif;
 
 .databox {
-    margin: 30px;
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(43, 43, 42));
-    opacity: 0.8;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    padding: 30px;
+  margin: 30px;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(43, 43, 42));
+  opacity: 0.8;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 30px;
 
-    .profilebox {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 50px;
+  .profilebox {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
 
-        img {
-            height: 250px;
-            width: 250px;
-            border-radius: 30%;
-        }
-
-        h1 {
-            font-family: $poppins;
-            font-size: 3rem;
-            color: $secondarycolor;
-        }
-
-        h3 {
-            font-family: $roboto;
-            font-size: 1.5rem;
-            color: $secondarycolor;
-        }
-
-        h5,
-        .blog {
-            margin: 2px 0;
-            font-family: $poppins;
-            font-size: 1rem;
-            color: $secondarycolor;
-        }
-
-        p {
-            font-family: $roboto;
-            font-size: 1.4rem;
-            color: $secondarycolor;
-            word-wrap: break-word;
-            margin-bottom: 20px;
-        }
-
-        a.infobtns {
-            font-size: 1rem;
-            color: $secondarycolor;
-            font-family: $poppins;
-            margin: 0px 20px 0px 0px;
-            background-color: #f30c0cce;
-            border-radius: 20px;
-            padding: 10px 15px;
-        }
-
-        a.profile {
-            position: relative;
-            font-family: $roboto;
-            font-size: 1.4rem;
-            color: $secondarycolor;
-            padding: 10px 15px;
-            background-color: #4814d6f1;
-            border-radius: 10px;
-
-        }
+    img {
+      height: 250px;
+      width: 250px;
+      border-radius: 30%;
     }
 
-    .profiledetails {
-        position: relative;
-        margin-top: 30px;
+    h1 {
+      font-family: $poppins;
+      font-size: 3rem;
+      color: $secondarycolor;
+    }
 
-        h1 {
+    h3 {
+      font-family: $roboto;
+      font-size: 1.5rem;
+      color: $secondarycolor;
+    }
+
+    h5,
+    .blog {
+      margin: 2px 0;
+      font-family: $poppins;
+      font-size: 1rem;
+      color: $secondarycolor;
+    }
+
+    p {
+      font-family: $roboto;
+      font-size: 1.4rem;
+      color: $secondarycolor;
+      word-wrap: break-word;
+      margin-bottom: 20px;
+    }
+
+    a.infobtns {
+      font-size: 1rem;
+      color: $secondarycolor;
+      font-family: $poppins;
+      margin: 0px 20px 0px 0px;
+      background-color: #f30c0cce;
+      border-radius: 20px;
+      padding: 10px 15px;
+    }
+
+    a.profile {
+      position: relative;
+      font-family: $roboto;
+      font-size: 1.4rem;
+      color: $secondarycolor;
+      padding: 10px 15px;
+      background-color: #4814d6f1;
+      border-radius: 10px;
+    }
+  }
+
+  .profiledetails {
+    position: relative;
+    margin-top: 30px;
+
+    h1 {
+      font-family: $poppins;
+      font-size: 2.5rem;
+      color: $secondarycolor2;
+      margin: 30px 0px;
+    }
+
+    h2 {
+      font-family: $poppins;
+      font-size: 1.6rem;
+      line-height: 25px;
+      color: $secondarycolor2;
+      margin: 15px 40px;
+
+      span {
+        font-family: $roboto;
+        font-size: 1.5rem;
+        color: $secondarycolor;
+      }
+
+      a {
+        font-family: $roboto;
+        font-size: 1.5rem;
+        color: $secondarycolor;
+        text-decoration: none;
+        margin: 0px 10px;
+      }
+    }
+
+    .repobox {
+      width: 100%;
+      padding: 10px 30px;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      a {
+        flex: 30%;
+        .repo {
+          border-radius: 20px;
+          box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+            rgba(240, 46, 170, 0.3) -10px 10px,
+            rgba(240, 46, 170, 0.2) -15px 15px,
+            rgba(240, 46, 170, 0.1) -20px 20px,
+            rgba(240, 46, 170, 0.05) -25px 25px;
+          background-color: $maincolor;
+          padding: 10px 20px;
+
+          h3 {
             font-family: $poppins;
-            font-size: 2.5rem;
-            color: $secondarycolor2;
-            margin: 30px 0px;
-        }
+            font-size: 1.2rem;
+            color: $secondarycolor;
+          }
 
-        h2 {
+          a {
             font-family: $poppins;
-            font-size: 1.6rem;
-            line-height: 25px;
-            color: $secondarycolor2;
-            margin: 15px 40px;
+            font-size: 0.9rem;
+            color: $secondarycolor;
+            text-decoration: none;
+          }
 
-            span {
-                font-family: $roboto;
-                font-size: 1.5rem;
-                color: $secondarycolor;
-            }
+          p {
+            font-family: $poppins;
+            font-size: 0.7rem;
+            line-height: 15px;
+            color: $secondarycolor;
+            height: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
 
-            a {
-                font-family: $roboto;
-                font-size: 1.5rem;
-                color: $secondarycolor;
-                text-decoration: none;
-                margin: 0px 10px;
-            }
-        }
-
-        .repobox {
-            width: 100%;
-            padding:10px 30px;
-
+          .iddata {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 20px;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            h3 {
+              font-family: $poppins;
+              font-size: 0.8rem;
+              color: $secondarycolor;
+            }
+          }
+
+          .languages {
+            margin: 10px 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+            button {
+              font-family: $poppins;
+              font-size: 0.8rem;
+              color: $secondarycolor;
+              background-color: $maincolor2;
+              border-radius: 20px;
+              padding: 5px 10px;
+            }
+          }
+
+          .countdetails {
+            margin: 10px 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+            button {
+              font-family: $poppins;
+              font-size: 0.8rem;
+              color: $secondarycolor;
+              background-color: blue;
+              border-radius: 20px;
+              padding: 5px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .databox {
+    margin: 10px;
+    padding: 15px;
+
+    .profilebox {
+      gap: 20px;
+
+      img {
+        height: 200px;
+        width: 200px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        word-wrap: break-word;
+      }
+
+      a.infobtns {
+        padding: 10px 10px;
+      }
+
+      a.profile {
+        font-size: 1.1rem;
+      }
+    }
+
+    .profiledetails {
+      h1 {
+        font-size: 2.2rem;
+        margin: 0px 0px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        line-height: 20px;
+        margin: 15px 30px;
+
+        span {
+          font-size: 1.5rem;
+        }
+
+        a {
+          margin: 0px 0px;
+        }
+      }
+
+      .repobox {
+        padding: 10px 20px;
+        gap: 25px;
+
+        a {
+          flex: 30%;
+          .repo {
+            border-radius: 20px;
+            padding: 10px 20px;
+
+            h3 {
+              font-size: 1.2rem;
+            }
 
             a {
-                flex: 30%;
-                .repo {
-                    border-radius: 20px;
-                    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-                    background-color: $maincolor;
-                    padding: 10px 20px;
-
-                    h3{
-                        font-family: $poppins;
-                        font-size: 1.2rem;
-                        color: $secondarycolor;
-                    }
-
-                    a{
-                        font-family: $poppins;
-                        font-size: .9rem;
-                        color: $secondarycolor;
-                        text-decoration: none;
-                    }
-
-                    p{
-                        font-family: $poppins;
-                        font-size: .7rem;
-                        line-height: 15px;
-                        color: $secondarycolor;
-                        height: 15px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-
-                    .iddata{
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        align-items: center;
-                        gap: 10px;
-
-                        h3{
-                            font-family: $poppins;
-                            font-size: .8rem;
-                            color: $secondarycolor;
-                        }
-                    }
-
-                    .languages{
-                        margin: 10px 0;
-                        width: 100%;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-evenly;
-                        align-items: center;
-
-                        button{
-                            font-family: $poppins;
-                            font-size: .8rem;
-                            color: $secondarycolor;
-                            background-color: $maincolor2;
-                            border-radius: 20px;
-                            padding: 5px 10px;
-                        }
-                    }
-
-                    .countdetails{
-                        margin: 10px 0;
-                        width: 100%;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-evenly;
-                        align-items: center;
-
-                        button{
-                            font-family: $poppins;
-                            font-size: .8rem;
-                            color: $secondarycolor;
-                            background-color: blue;
-                            border-radius: 20px;
-                            padding: 5px 10px;
-
-                        }
-
-                    }
-
-                }
+              font-size: 1rem;
             }
+
+            p {
+              font-size: 0.8rem;
+              line-height: 15px;
+            }
+
+            .iddata {
+              gap: 10px;
+            }
+
+            .countdetails {
+              gap: 10px;
+
+              button {
+                padding: 5px 5px;
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
 
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .databox {
+    margin: 10px;
+    padding: 15px;
 
-@media screen and (max-width: 1024px){
-    .databox {
-        margin: 10px;
-        padding: 15px;
+    .profilebox {
+      gap: 30px;
+      flex-direction: column;
 
-        .profilebox{
-            gap:20px;
+      img {
+        height: 200px;
+        width: 200px;
+      }
 
+      h1 {
+        font-size: 2.5rem;
+      }
 
-            img{
-                height: 200px;
-                width: 200px;
-            }
+      a.blog {
+        font-size: 1.4rem;
+      }
 
-            h1{
-                font-size: 2rem;
-            }
+      h3 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+      }
 
-            h3{
-                font-size: 1.25rem;
-            }
+      p {
+        font-size: 1.4rem;
+        margin-top: 10px;
+        word-wrap: break-word;
+      }
+      .info-btns {
+        position: relative;
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+      }
+      a.infobtns {
+        padding: 10px 15px;
+      }
 
-            p{
-                font-size: 1.1rem;
-                word-wrap: break-word;
-            }
-
-            a.infobtns{
-                padding: 10px 10px;
-            }
-
-            a.profile{
-                font-size: 1.1rem;
-            }
-
-        }
-    
-        .profiledetails {
-
-            h1 {
-                font-size: 2.2rem;
-                margin: 0px 0px;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-                line-height: 20px;
-                margin: 15px 30px;
-    
-                span {
-                    font-size: 1.5rem;
-                }
-    
-                a {
-                    margin: 0px 0px;
-                }
-            }
-
-            .repobox {
-                padding:10px 20px;
-                gap: 25px;
-    
-                a {
-                    flex: 30%;
-                    .repo {
-                        border-radius: 20px;
-                        padding: 10px 20px;
-    
-                        h3{
-                            font-size: 1.2rem;
-                        }
-    
-                        a{
-                            font-size: 1rem;
-                        }
-    
-                        p{
-                            font-size: .8rem;
-                            line-height: 15px;
-                        }
-    
-                        .iddata{
-                            gap: 10px;
-    
-                        }
-        
-                        .countdetails{
-                            gap: 10px;
-    
-                            button{
-                                padding: 5px 5px;
-    
-                            }
-    
-                        }
-    
-                    }
-                }
-            }    
-
-
-        }
-
+      a.profile {
+        margin-top: 20px;
+        font-size: 1.4rem;
+      }
     }
 
-}
+    .profiledetails {
+      h1 {
+        font-size: 2.5rem;
+        margin: 0px 0px;
+      }
 
-@media screen and (max-width: 768px){
+      h2 {
+        font-size: 1.6rem;
+        line-height: 15px;
+        margin: 13px 10px;
 
-    html{
-        font-size: 10px;
-    }
-    .databox {
-        margin: 10px;
-        padding: 15px;
-
-        .profilebox{
-            gap: 30px;
-            flex-direction: column;
-
-            img{
-                height: 200px;
-                width: 200px;
-            }
-
-            h1{
-                font-size: 2.5rem;
-            }
-
-
-
-            a.blog{
-                font-size: 1.4rem;
-            }
-
-            h3{
-                font-size: 1.5rem;
-                margin-top: 10px;
-            }
-
-            p{
-                font-size: 1.4rem;
-                margin-top: 10px;
-                word-wrap: break-word;
-            }
-            .info-btns{
-                position: relative;
-                margin-top: 50px;
-                width: 100%;
-                text-align: center;
-            }
-            a.infobtns{
-                padding: 10px 15px;
-            }
-
-            a.profile{
-                margin-top: 20px;
-                font-size: 1.4rem;
-            }
-
-        }
-    
-        .profiledetails {
-
-            h1 {
-                font-size: 2.5rem;
-                margin: 0px 0px;
-            }
-
-            h2 {
-                font-size: 1.6rem;
-                line-height: 15px;
-                margin: 13px 10px;
-    
-                span {
-                    font-size: 1.5rem;
-                }
-    
-                a {
-                    font-size: 1.3rem;
-                    margin: 0px 0px;
-                }
-            }
-
-            .repobox {
-                padding:10px 20px;
-                gap: 25px;
-    
-                a {
-                    flex: 30%;
-                    .repo {
-                        min-width: 300px;
-                        border-radius: 20px;
-                        padding: 10px 20px;
-    
-                        h3{
-                            font-size: 1.2rem;
-                        }
-    
-                        a{
-                            font-size: 1rem;
-                        }
-    
-                        p{
-                            font-size: .8rem;
-                            line-height: 15px;
-                        }
-    
-                        .iddata{
-                            gap: 10px;
-    
-                        }
-        
-                        .countdetails{
-                            gap: 10px;
-    
-                            button{
-                                padding: 5px 5px;
-    
-                            }
-    
-                        }
-    
-                    }
-                }
-            }    
-
-
+        span {
+          font-size: 1.5rem;
         }
 
-    }
+        a {
+          font-size: 1.3rem;
+          margin: 0px 0px;
+        }
+      }
 
+      .repobox {
+        padding: 10px 20px;
+        gap: 25px;
+
+        a {
+          flex: 30%;
+          .repo {
+            min-width: 300px;
+            border-radius: 20px;
+            padding: 10px 20px;
+
+            h3 {
+              font-size: 1.2rem;
+            }
+
+            a {
+              font-size: 1rem;
+            }
+
+            p {
+              font-size: 0.8rem;
+              line-height: 15px;
+            }
+
+            .iddata {
+              gap: 10px;
+            }
+
+            .countdetails {
+              gap: 10px;
+
+              button {
+                padding: 5px 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
