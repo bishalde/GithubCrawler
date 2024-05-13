@@ -78,20 +78,18 @@ const Profilebox = (props: any) => {
             return(
             <a href={repo.html_url} key={repo.id} target="_blank">
               <div className="repo">
-                <h3>{repo.name}</h3>
-                <p>{repo.description}</p>
-                <a href={repo.homepage} target="_blank">{repo.homepage}</a>
+                <h3 style={{fontSize: "30px"}}>{repo.name}</h3>
+                {repo.description && <p>{repo.description}</p>}
+               {repo.homepage && (
+                <>
+                    <p>Deployed site:</p>
+                    <a href={repo.homepage} target="_blank">{repo.homepage}</a>
+                </>
+              )}
                 <div className="iddata">
                 <h3>ID : {repo.id}</h3>
                 <h3>Node ID : {repo.node_id}</h3>
                 </div>
-                {/* <h3>Languages</h3>
-                <div className="languages">
-                  <button>{languages}</button>
-                  <button>Css</button>
-                  <button>JavaScript</button>
-                  <button>C++</button>
-                </div> */}
                 <h3>Counts</h3>
                 <div className="countdetails">
                   <button>Forks {repo.forks}</button>
