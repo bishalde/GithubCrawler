@@ -1,341 +1,365 @@
 .databox {
-  margin: 30px;
-  background-image: linear-gradient(rgb(0, 0, 0), rgb(43, 43, 42));
-  opacity: 0.8;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  padding: 30px;
+	margin: 30px;
+	background-image: linear-gradient(rgb(0, 0, 0), rgb(43, 43, 42));
+	opacity: 0.8;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	padding: 30px;
 }
 .databox .profilebox {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 50px;
 }
 .databox .profilebox img {
-  height: 250px;
-  width: 250px;
-  border-radius: 30%;
+	height: 250px;
+	width: 250px;
+	border-radius: 30%;
 }
 .databox .profilebox h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 3rem;
-  color: #ffffff;
+	font-family: "Poppins", sans-serif;
+	font-size: 3rem;
+	color: #ffffff;
 }
 .databox .profilebox h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.5rem;
+	color: #ffffff;
 }
 .databox .profilebox h5,
 .databox .profilebox .blog {
-  margin: 2px 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  color: #ffffff;
+	margin: 2px 0;
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	color: #ffffff;
 }
 .databox .profilebox p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
-  color: #ffffff;
-  word-wrap: break-word;
-  margin-bottom: 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.4rem;
+	color: #ffffff;
+	word-wrap: break-word;
+	margin-bottom: 20px;
 }
 .databox .profilebox a.infobtns {
-  font-size: 1rem;
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  margin: 0px 20px 0px 0px;
-  background-color: rgba(243, 12, 12, 0.8078431373);
-  border-radius: 20px;
-  padding: 10px 15px;
+	font-size: 1rem;
+	color: #ffffff;
+	font-family: "Poppins", sans-serif;
+	margin: 0px 20px 0px 0px;
+	background-color: rgba(243, 12, 12, 0.8078431373);
+	border-radius: 20px;
+	padding: 10px 15px;
 }
 .databox .profilebox a.profile {
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
-  color: #ffffff;
-  padding: 10px 15px;
-  background-color: rgba(72, 20, 214, 0.9450980392);
-  border-radius: 10px;
+	position: relative;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.4rem;
+	color: #ffffff;
+	padding: 10px 15px;
+	background-color: rgba(72, 20, 214, 0.9450980392);
+	border-radius: 10px;
 }
 .databox .profiledetails {
-  position: relative;
-  margin-top: 30px;
+	position: relative;
+	margin-top: 30px;
 }
 .databox .profiledetails h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
-  color: #2dba4e;
-  margin: 30px 0px;
+	font-family: "Poppins", sans-serif;
+	font-size: 2.5rem;
+	color: #2dba4e;
+	margin: 30px 0px;
 }
 .databox .profiledetails h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
-  line-height: 25px;
-  color: #2dba4e;
-  margin: 15px 40px;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.6rem;
+	line-height: 25px;
+	color: #2dba4e;
+	margin: 15px 40px;
 }
 .databox .profiledetails h2 span {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.5rem;
+	color: #ffffff;
 }
 .databox .profiledetails h2 a {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0px 10px;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.5rem;
+	color: #ffffff;
+	text-decoration: none;
+	margin: 0px 10px;
 }
 .databox .profiledetails .repobox {
-  width: 100%;
-  padding: 10px 30px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
+	width: 100%;
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 .databox .profiledetails .repobox a {
-  flex: 30%;
+	flex: 30%;
 }
 .databox .profiledetails .repobox a .repo {
-  border-radius: 20px;
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-  background-color: #000000;
-  padding: 10px 20px;
+	border-radius: 20px;
+	background-image: radial-gradient(
+		circle,
+		#34476d,
+		#293b60,
+		#1d3052,
+		#122545,
+		#051a39
+	);
+	padding: 10px 20px;
+	height: 100%;
 }
 .databox .profiledetails .repobox a .repo h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
-  color: #ffffff;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.2rem;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 10px;
 }
 .databox .profiledetails .repobox a .repo a {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
-  color: #ffffff;
-  text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+	color: #ffffff;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+	margin-bottom: 20px;
 }
 .databox .profiledetails .repobox a .repo p {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.7rem;
-  line-height: 15px;
-  color: #ffffff;
-  height: 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	line-height: 15px;
+	color: #ffffff;
+	height: 15px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	margin: 20px 0;
+	font-weight: 900;
+}
+.databox .profiledetails .repobox a .repo h4 {
+	text-align: center;
+	color: #fff;
 }
 .databox .profiledetails .repobox a .repo .iddata {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
 }
 .databox .profiledetails .repobox a .repo .iddata h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
-  color: #ffffff;
+	font-family: "Poppins", sans-serif;
+	font-size: 0.8rem;
+	color: #ffffff;
 }
 .databox .profiledetails .repobox a .repo .languages {
-  margin: 10px 0;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+	margin: 10px 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
 }
 .databox .profiledetails .repobox a .repo .languages button {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
-  color: #ffffff;
-  background-color: #101011;
-  border-radius: 20px;
-  padding: 5px 10px;
+	font-family: "Poppins", sans-serif;
+	font-size: 0.8rem;
+	color: #ffffff;
+	background-color: #101011;
+	border-radius: 20px;
+	padding: 5px 10px;
 }
 .databox .profiledetails .repobox a .repo .countdetails {
-  margin: 10px 0;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+	margin: 10px 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 10px;
 }
 .databox .profiledetails .repobox a .repo .countdetails button {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
-  color: #ffffff;
-  background-color: blue;
-  border-radius: 20px;
-  padding: 5px 10px;
+	font-family: "Poppins", sans-serif;
+	font-size: 0.8rem;
+	color: #ffffff;
+	background-color: blue;
+	border-radius: 20px;
+	padding: 5px 10px;
 }
 
 @media screen and (max-width: 1024px) {
-  .databox {
-    margin: 10px;
-    padding: 15px;
-  }
-  .databox .profilebox {
-    gap: 20px;
-  }
-  .databox .profilebox img {
-    height: 200px;
-    width: 200px;
-  }
-  .databox .profilebox h1 {
-    font-size: 2rem;
-  }
-  .databox .profilebox h3 {
-    font-size: 1.25rem;
-  }
-  .databox .profilebox p {
-    font-size: 1.1rem;
-    word-wrap: break-word;
-  }
-  .databox .profilebox a.infobtns {
-    padding: 10px 10px;
-  }
-  .databox .profilebox a.profile {
-    font-size: 1.1rem;
-  }
-  .databox .profiledetails h1 {
-    font-size: 2.2rem;
-    margin: 0px 0px;
-  }
-  .databox .profiledetails h2 {
-    font-size: 1.5rem;
-    line-height: 20px;
-    margin: 15px 30px;
-  }
-  .databox .profiledetails h2 span {
-    font-size: 1.5rem;
-  }
-  .databox .profiledetails h2 a {
-    margin: 0px 0px;
-  }
-  .databox .profiledetails .repobox {
-    padding: 10px 20px;
-    gap: 25px;
-  }
-  .databox .profiledetails .repobox a {
-    flex: 30%;
-  }
-  .databox .profiledetails .repobox a .repo {
-    border-radius: 20px;
-    padding: 10px 20px;
-  }
-  .databox .profiledetails .repobox a .repo h3 {
-    font-size: 1.2rem;
-  }
-  .databox .profiledetails .repobox a .repo a {
-    font-size: 1rem;
-  }
-  .databox .profiledetails .repobox a .repo p {
-    font-size: 0.8rem;
-    line-height: 15px;
-  }
-  .databox .profiledetails .repobox a .repo .iddata {
-    gap: 10px;
-  }
-  .databox .profiledetails .repobox a .repo .countdetails {
-    gap: 10px;
-  }
-  .databox .profiledetails .repobox a .repo .countdetails button {
-    padding: 5px 5px;
-  }
+	.databox {
+		margin: 10px;
+		padding: 15px;
+	}
+	.databox .profilebox {
+		gap: 20px;
+	}
+	.databox .profilebox img {
+		height: 200px;
+		width: 200px;
+	}
+	.databox .profilebox h1 {
+		font-size: 2rem;
+	}
+	.databox .profilebox h3 {
+		font-size: 1.25rem;
+	}
+	.databox .profilebox p {
+		font-size: 1.1rem;
+		word-wrap: break-word;
+	}
+	.databox .profilebox a.infobtns {
+		padding: 10px 10px;
+	}
+	.databox .profilebox a.profile {
+		font-size: 1.1rem;
+	}
+	.databox .profiledetails h1 {
+		font-size: 2.2rem;
+		margin: 0px 0px;
+	}
+	.databox .profiledetails h2 {
+		font-size: 1.5rem;
+		line-height: 20px;
+		margin: 15px 30px;
+	}
+	.databox .profiledetails h2 span {
+		font-size: 1.5rem;
+	}
+	.databox .profiledetails h2 a {
+		margin: 0px 0px;
+	}
+	.databox .profiledetails .repobox {
+		padding: 10px 20px;
+		gap: 25px;
+	}
+	.databox .profiledetails .repobox a {
+		flex: 30%;
+	}
+	.databox .profiledetails .repobox a .repo {
+		border-radius: 20px;
+		padding: 10px 20px;
+	}
+	.databox .profiledetails .repobox a .repo h3 {
+		font-size: 1.2rem;
+	}
+	.databox .profiledetails .repobox a .repo a {
+		font-size: 1rem;
+	}
+	.databox .profiledetails .repobox a .repo p {
+		font-size: 0.8rem;
+		line-height: 15px;
+	}
+	.databox .profiledetails .repobox a .repo .iddata {
+		gap: 10px;
+	}
+	.databox .profiledetails .repobox a .repo .countdetails {
+		gap: 10px;
+	}
+	.databox .profiledetails .repobox a .repo .countdetails button {
+		padding: 5px 5px;
+	}
 }
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 10px;
-  }
-  .databox {
-    margin: 10px;
-    padding: 15px;
-  }
-  .databox .profilebox {
-    gap: 30px;
-    flex-direction: column;
-  }
-  .databox .profilebox img {
-    height: 200px;
-    width: 200px;
-  }
-  .databox .profilebox h1 {
-    font-size: 2.5rem;
-  }
-  .databox .profilebox a.blog {
-    font-size: 1.4rem;
-  }
-  .databox .profilebox h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-  }
-  .databox .profilebox p {
-    font-size: 1.4rem;
-    margin-top: 10px;
-    word-wrap: break-word;
-  }
-  .databox .profilebox .info-btns {
-    position: relative;
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-  }
-  .databox .profilebox a.infobtns {
-    padding: 10px 15px;
-  }
-  .databox .profilebox a.profile {
-    margin-top: 20px;
-    font-size: 1.4rem;
-  }
-  .databox .profiledetails h1 {
-    font-size: 2.5rem;
-    margin: 0px 0px;
-  }
-  .databox .profiledetails h2 {
-    font-size: 1.6rem;
-    line-height: 15px;
-    margin: 13px 10px;
-  }
-  .databox .profiledetails h2 span {
-    font-size: 1.5rem;
-  }
-  .databox .profiledetails h2 a {
-    font-size: 1.3rem;
-    margin: 0px 0px;
-  }
-  .databox .profiledetails .repobox {
-    padding: 10px 20px;
-    gap: 25px;
-  }
-  .databox .profiledetails .repobox a {
-    flex: 30%;
-  }
-  .databox .profiledetails .repobox a .repo {
-    min-width: 300px;
-    border-radius: 20px;
-    padding: 10px 20px;
-  }
-  .databox .profiledetails .repobox a .repo h3 {
-    font-size: 1.2rem;
-  }
-  .databox .profiledetails .repobox a .repo a {
-    font-size: 1rem;
-  }
-  .databox .profiledetails .repobox a .repo p {
-    font-size: 0.8rem;
-    line-height: 15px;
-  }
-  .databox .profiledetails .repobox a .repo .iddata {
-    gap: 10px;
-  }
-  .databox .profiledetails .repobox a .repo .countdetails {
-    gap: 10px;
-  }
-  .databox .profiledetails .repobox a .repo .countdetails button {
-    padding: 5px 5px;
-  }
-}/*# sourceMappingURL=Profilebox.css.map */
+	html {
+		font-size: 10px;
+	}
+	.databox {
+		margin: 10px;
+		padding: 15px;
+	}
+	.databox .profilebox {
+		gap: 30px;
+		flex-direction: column;
+	}
+	.databox .profilebox img {
+		height: 200px;
+		width: 200px;
+	}
+	.databox .profilebox h1 {
+		font-size: 2.5rem;
+	}
+	.databox .profilebox a.blog {
+		font-size: 1.4rem;
+	}
+	.databox .profilebox h3 {
+		font-size: 1.5rem;
+		margin-top: 10px;
+	}
+	.databox .profilebox p {
+		font-size: 1.4rem;
+		margin-top: 10px;
+		word-wrap: break-word;
+	}
+	.databox .profilebox .info-btns {
+		position: relative;
+		margin-top: 50px;
+		width: 100%;
+		text-align: center;
+	}
+	.databox .profilebox a.infobtns {
+		padding: 10px 15px;
+	}
+	.databox .profilebox a.profile {
+		margin-top: 20px;
+		font-size: 1.4rem;
+	}
+	.databox .profiledetails h1 {
+		font-size: 2.5rem;
+		margin: 0px 0px;
+	}
+	.databox .profiledetails h2 {
+		font-size: 1.6rem;
+		line-height: 15px;
+		margin: 13px 10px;
+	}
+	.databox .profiledetails h2 span {
+		font-size: 1.5rem;
+	}
+	.databox .profiledetails h2 a {
+		font-size: 1.3rem;
+		margin: 0px 0px;
+	}
+	.databox .profiledetails .repobox {
+		padding: 10px 20px;
+		gap: 25px;
+	}
+	.databox .profiledetails .repobox a {
+		flex: 30%;
+	}
+	.databox .profiledetails .repobox a .repo {
+		min-width: 300px;
+		border-radius: 20px;
+		padding: 10px 20px;
+	}
+	.databox .profiledetails .repobox a .repo h3 {
+		font-size: 1.2rem;
+	}
+	.databox .profiledetails .repobox a .repo a {
+		font-size: 1rem;
+	}
+	.databox .profiledetails .repobox a .repo p {
+		font-size: 0.8rem;
+		line-height: 15px;
+	}
+	.databox .profiledetails .repobox a .repo .iddata {
+		gap: 10px;
+	}
+	.databox .profiledetails .repobox a .repo .countdetails {
+		gap: 10px;
+	}
+	.databox .profiledetails .repobox a .repo .countdetails button {
+		padding: 5px 5px;
+	}
+} /*# sourceMappingURL=Profilebox.css.map */
