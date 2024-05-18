@@ -1,42 +1,37 @@
-import './Navbar.css'
-import { useState } from "react";
+import './Navbar.css';
+import { useState } from 'react';
 
 function Navbar() {
-  const [navlinksvalue, setnavlinks] = useState("navlinks");
-
+  const [navlinksActive, setNavlinksActive] = useState(false);
 
   const navbarActive = () => {
-    if (navlinksvalue === "navlinks") {
-      setnavlinks("navlinks activenavlinks");
-    } else {
-      setnavlinks("navlinks");
-    }
+    setNavlinksActive(!navlinksActive);
   };
 
   return (
     <>
-    <nav>
-      <a href="/">
-        <div className="navlogo">
-            <img src="logos/rm1.png" />
+      <nav>
+        <a href="/">
+          <div className="navlogo">
+            <img src="logos/rm1.png" alt="Logo" />
             <h1>GitHubCrawler</h1>
-        </div>
-      </a>
+          </div>
+        </a>
 
-      <div className="hamberger" onClick={navbarActive}>
-        <div className="ham-lines"></div>
-        <div className="ham-lines"></div>
-        <div className="ham-lines"></div>
-      </div>
-
-        <div className={navlinksvalue}>
-            <a href="/">Home</a>
-            <a href="https://bishalde.vercel.app">Developer</a>
-            <a href="https://github.com/bishalde/GithubCrawler">Repostiory</a>
+        <div className={`hamberger ${navlinksActive ? 'open' : ''}`} onClick={navbarActive}>
+          <div className="ham-lines line1"></div>
+          <div className="ham-lines line2"></div>
+          <div className="ham-lines line3"></div>
         </div>
-    </nav>
+
+        <div className={`navlinks ${navlinksActive ? 'activenavlinks' : ''}`}>
+          <a href="/">Home</a>
+          <a href="https://bishalde.vercel.app">Developer</a>
+          <a href="https://github.com/bishalde/GithubCrawler">Repository</a>
+        </div>
+      </nav>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
