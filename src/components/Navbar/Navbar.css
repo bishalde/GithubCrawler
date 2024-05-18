@@ -1,3 +1,4 @@
+/* Existing styles for the navigation bar */
 nav {
   z-index: 100;
   -webkit-user-select: none;
@@ -17,12 +18,24 @@ nav {
 nav .hamberger {
   position: relative;
   display: none;
+  cursor: pointer;
+  z-index: 101;
 }
 nav .hamberger .ham-lines {
-  width: 20px;
-  height: 2px;
+  width: 30px;
+  height: 3px;
   background-color: #fafbfc;
   margin: 5px;
+  transition: all 0.5s ease-in-out;
+}
+nav .hamberger.open .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+nav .hamberger.open .line2 {
+  opacity: 0;
+}
+nav .hamberger.open .line3 {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 nav .navlogo {
   display: flex;
@@ -101,7 +114,6 @@ nav .navlinks a:hover::after {
   nav .hamberger {
     display: block;
     margin-right: 10px;
-    z-index: 101;
   }
   nav .navlinks {
     gap: 10px;
@@ -124,4 +136,4 @@ nav .navlinks a:hover::after {
   nav .activenavlinks {
     transform: translateX(-10%);
   }
-}/*# sourceMappingURL=Navbar.css.map */
+}
