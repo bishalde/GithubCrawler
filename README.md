@@ -33,12 +33,12 @@ All public repos (up to 500, not just the first 30), with:
 - a language filter
 - toggles to hide forks and archived repos
 
-Filters are kept in the URL, so you can share an exact view, e.g. `/user/gaearon?tab=repositories&lang=JavaScript`.
+Filters are kept in the URL, so you can share an exact view, e.g. `/user/bishalde?tab=repositories&lang=JavaScript`.
 
 ![Repository explorer in light mode](docs/screenshots/repos.png)
 
 ### Compare developers
-`/compare/torvalds/gaearon` puts two profiles head to head: followers, stars, forks, repos, gists and years active, with each metric's leader highlighted, plus a side-by-side language mix. One click swaps the two users.
+`/compare/bishalde/torvalds` puts you head to head with the creator of Linux, or compares any two profiles: followers, stars, forks, repos, gists and years active, with each metric's leader highlighted, plus a side-by-side language mix. One click swaps the two users.
 
 ![Compare page](docs/screenshots/compare.png)
 
@@ -105,7 +105,7 @@ src/
 
 It's a static single-page app. Build with `npm run build` and serve `dist/`.
 
-`vercel.json` already rewrites every path to `index.html`, so deep links like `/user/torvalds` work on Vercel. On other hosts (Netlify, Cloudflare Pages, nginx), configure an equivalent fallback to `index.html`.
+`vercel.json` already rewrites every path to `index.html`, so deep links like `/user/bishalde` work on Vercel. On other hosts (Netlify, Cloudflare Pages, nginx), configure an equivalent fallback to `index.html`.
 
 ## Author
 

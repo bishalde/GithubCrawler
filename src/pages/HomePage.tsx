@@ -3,7 +3,7 @@ import { BarChart3, FolderGit2, GitCompareArrows, Sparkles } from 'lucide-react'
 import { SearchBar } from '../features/search/SearchBar'
 import { RecentSearches } from '../features/search/RecentSearches'
 
-const EXAMPLES = ['torvalds', 'gaearon', 'sindresorhus', 'yyx990803', 'tj']
+const EXAMPLES = ['bishalde', 'torvalds', 'gaearon', 'sindresorhus', 'yyx990803']
 
 const FEATURES = [
   {

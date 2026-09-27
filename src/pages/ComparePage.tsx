@@ -126,7 +126,7 @@ function UserColumn({ user, wins, align }: { user: GitHubUser | undefined; wins:
         <div className="truncate font-mono text-xs text-muted">@{user.login}</div>
         {wins !== undefined && (
           <div className="mt-1 text-xs text-muted">
-            <span className="font-semibold text-accent tabular">{wins}</span> wins
+            <span className="font-semibold text-accent tabular">{wins}</span> {wins === 1 ? 'win' : 'wins'}
           </div>
         )}
       </div>
